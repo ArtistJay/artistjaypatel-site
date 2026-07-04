@@ -1,19 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to Jay's Website</title>
-    <style>
-        body { 
-            font-family: Arial; 
-            background: #f5f5f5; 
-            text-align: center; 
-            padding-top: 50px; 
-        }
-        h1 { color: #333; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jay Ashokbhai Patel</title>
+  <meta name="description" content="Jay A. Patel — PMRF Research Scholar at IIT Hyderabad, working on wind turbines over complex terrain.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, I am Jayu</h1>
-    <p>Welcome to my personal website!</p>
+
+<header>
+  <div class="nav-inner">
+    <a class="site-name" href="index.html">Jay A. Patel</a>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="education.html">Education</a>
+      <a href="research.html">Research</a>
+      <a href="about.html">About Me</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div>
+      <p class="eyebrow">PMRF Research Scholar · IIT Hyderabad</p>
+      <h1>Jay Ashokbhai Patel</h1>
+      <p class="lede">Greetings!</p>
+      <p>Myself Jay A. Patel, endorsing humanity&rsquo;s endeavors toward achieving
+      Kardashev Civilization I and beyond in the realm of physical reality. My
+      contributions may be small in scale, but they are directed toward this
+      larger vision.</p>
+      <p>I also have a passion for trading and investment.</p>
+    </div>
+    <!-- EDIT: replace the src below with your own photo, e.g. images/jay.jpg
+         after you upload one to an "images" folder in your repository -->
+    <img class="portrait"
+         src="https://lh3.googleusercontent.com/sitesv/AA5AbUCbiaPzvdW1Z1ps_uUiVZ9wanOCH6zCxQHUZdv7tkDZNwiq4Qww_uUHNvvy2Yh2kImwWsN2ZQqOQVqymjbpuntv1qJSqsdtFFlJxyeAl344DIaMMgyXry7_ucaBsirisMFMnWGVIW6JfTCL2sojv3_L-vdQT2Ab4G7ndCy-8rwvzHgd_eJ_BZ5rakb4nQROdb_j86r4grEx4ISYwGAUIomNS_QjHXhiiRI5Ww=w1280"
+         alt="Jay A. Patel">
+  </div>
+
+  <!-- Signature motif: streamlines over a cosine-squared hill,
+       a nod to the research on flow over complex terrain -->
+  <svg class="hill-divider" viewBox="0 0 880 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Streamlines of wind flowing over a hill">
+    <path class="streamline"    d="M0,40  C240,40 300,18 440,18 C580,18 640,40 880,40"/>
+    <path class="streamline s2" d="M0,64  C240,64 300,36 440,36 C580,36 640,64 880,64"/>
+    <path class="streamline s3" d="M0,88  C240,88 310,58 440,58 C570,58 640,88 880,88"/>
+    <path class="hill"          d="M0,118 C260,118 330,80 440,80 C550,80 620,118 880,118"/>
+  </svg>
+
+  <h2>What I do</h2>
+  <p>Currently, I am a Research Scholar in the Department of Mechanical and
+  Aerospace Engineering at <a href="https://iith.ac.in/">IIT Hyderabad</a>,
+  focusing on <strong>wind turbines over complex terrain</strong> using
+  large-eddy simulation.</p>
+
+  <p>I have served as a Teaching Assistant in NPTEL courses (Computational
+  Science in Engineering, 2023; Fluid Mechanics, 2024) and conducted sessions
+  at various colleges and schools under the PMRF scheme, contributing to the
+  spread of scientific knowledge.</p>
+
+  <p><a href="research.html">Read about my research &rarr;</a></p>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>&copy; Jay A. Patel</span>
+    <span>
+      <a href="mailto:me21resch11002@iith.ac.in">me21resch11002@iith.ac.in</a> ·
+      <a href="mailto:artistjaypatel@gmail.com">artistjaypatel@gmail.com</a> ·
+      <a href="https://github.com/ArtistJay">GitHub</a>
+    </span>
+  </div>
+</footer>
+
 </body>
 </html>
