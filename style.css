@@ -326,3 +326,52 @@ footer {
 
 .footer-inner a { color: var(--muted); }
 .footer-inner a:hover { color: var(--steel-dark); }
+
+/* ---------- full-width banner (Home & About) ---------- */
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 36vw, 400px);
+  object-fit: cover;
+}
+
+.banner .banner-title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 600;
+  font-size: clamp(38px, 7vw, 68px);
+  color: #ffffff;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
+}
+
+/* use this variant when the banner photo is light/pale */
+.banner.light .banner-title {
+  color: var(--ink);
+  text-shadow: 0 2px 14px rgba(255, 255, 255, 0.65);
+}
+
+/* verses overlaid on banner corners (Education page) */
+.banner .banner-verse {
+  position: absolute;
+  bottom: 16px;
+  margin: 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(14px, 2.4vw, 22px);
+  color: #ffffff;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
+}
+
+.banner .banner-verse.left  { left: 24px; }
+.banner .banner-verse.right { right: 24px; }
