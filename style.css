@@ -35,7 +35,12 @@ body {
 
 header {
   border-bottom: 1px solid var(--line);
-  background: var(--paper);
+  background: rgba(242, 245, 247, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .nav-inner {
@@ -392,3 +397,65 @@ figure video {
   padding: 6px 30px;
   border-radius: 10px;
 }
+
+/* ---------- blurred home-image page background (all pages except About) ---------- */
+
+body.tinted::before {
+  content: "";
+  position: fixed;
+  inset: -60px;
+  z-index: -1;
+  background: url("images/banner-home.jpg") center / cover no-repeat;
+  filter: blur(55px) saturate(1.05);
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+/* ---------- home banner: name at the bottom ---------- */
+
+.banner-title.bottom {
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+/* ---------- image / video grids (Research page) ---------- */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 22px 0;
+}
+
+.grid-2 img,
+.grid-2 video {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  display: block;
+  background: #fff;
+}
+
+.grid-2 figure { margin: 0; }
+
+@media (max-width: 620px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+/* single-column gallery for ultra-wide panoramic simulations */
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 22px 0;
+}
+
+.grid-1 video {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  display: block;
+  background: #fff;
+}
+
+.grid-1 figure { margin: 0; }

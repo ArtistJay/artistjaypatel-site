@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="tinted">
 
 <header>
   <div class="nav-inner">
@@ -31,6 +31,8 @@
 </div>
 
 <main>
+  <p style="margin-top:6px"><a href="https://scholar.google.com/citations?user=azzS6tMAAAAJ&amp;hl=en">My Google Scholar profile &rarr;</a></p>
+
   <h2>Publications</h2>
   <ul class="pub-list">
     <li>Patel, J.A., Maity, A. and Ghaisas, N.S., 2024. A coupled immersed
@@ -48,9 +50,11 @@
     Wind Energy Conversion Systems</em> (pp. 61–77). Singapore: Springer
     Nature Singapore.</li>
 
-    <li>Jay A. Patel, Ankita Maity, Niranjan S. Ghaisas. Large-eddy simulation
-    studies of effects on cosine-squared hills&rsquo; wakes. <em>FMFP</em>,
-    2023.</li>
+    <li>Maity, A., Patel, J.A. and Ghaisas, N.S.
+    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=azzS6tMAAAAJ&amp;citation_for_view=azzS6tMAAAAJ:UeHWp8X0CEIC">Large
+    Eddy Simulation of the Flow Over Two-Dimensional Smooth Hills with
+    Increasing Slopes</a>. In <em>Conference on Fluid Mechanics and Fluid
+    Power</em> (pp. 267–277).</li>
   </ul>
 
   <h2>Ph.D. Research</h2>
@@ -88,6 +92,64 @@
          alt="Simulation of a wind turbine over a hill">
     <figcaption>Fig. 3 — Simulation of a wind turbine over a hill.</figcaption>
   </figure>
+
+  <h2>Machine Learning for CFD</h2>
+  <p>Alongside classical large-eddy simulation, I work on machine-learning
+  surrogate models for turbulent flows. The figures below compare
+  instantaneous streamwise velocity fields predicted by neural models
+  against LES after long rollouts, at mid-height and near-surface planes.</p>
+  <!-- EDIT: reorder ml1–ml8 or tweak the paragraph above as you like -->
+  <div class="grid-2">
+    <img src="images/ml1.png" alt="ML vs LES velocity field comparison 1">
+    <img src="images/ml2.png" alt="ML vs LES velocity field comparison 2">
+    <img src="images/ml3.png" alt="ML vs LES velocity field comparison 3">
+    <img src="images/ml4.png" alt="ML vs LES velocity field comparison 4">
+    <img src="images/ml5.png" alt="ML vs LES velocity field comparison 5">
+    <img src="images/ml6.png" alt="ML vs LES velocity field comparison 6">
+    <img src="images/ml7.png" alt="ML vs LES velocity field comparison 7">
+    <img src="images/ml8.png" alt="ML vs LES velocity field comparison 8">
+  </div>
+
+  <h2>Simulation Gallery</h2>
+  <p class="muted">A few of my large-eddy simulations in motion.</p>
+  <div class="grid-1">
+    <figure>
+      <video src="images/turbine1.mp4" autoplay loop muted playsinline></video>
+      <figcaption>Wind turbine over a hill — case 1</figcaption>
+    </figure>
+    <figure>
+      <video src="images/turbine2.mp4" autoplay loop muted playsinline></video>
+      <figcaption>Wind turbine over a hill — case 2</figcaption>
+    </figure>
+    <figure>
+      <video src="images/turbine3.mp4" autoplay loop muted playsinline></video>
+      <figcaption>Wind turbine over a hill — case 3</figcaption>
+    </figure>
+    <figure>
+      <video src="images/turbine4.mp4" autoplay loop muted playsinline></video>
+      <figcaption>Wind turbine over a hill — case 4</figcaption>
+    </figure>
+    <figure>
+      <video src="images/turbine5.mp4" autoplay loop muted playsinline></video>
+      <figcaption>Wind turbine over a hill — case 5</figcaption>
+    </figure>
+    <figure>
+      <video src="images/turbine6.mp4" autoplay loop muted playsinline></video>
+      <figcaption>Wind turbine over a hill — case 6</figcaption>
+    </figure>
+    <figure>
+      <video src="images/hillflow.mp4" autoplay loop muted playsinline></video>
+      <figcaption>Flow over a hill</figcaption>
+    </figure>
+    <figure>
+      <video src="images/buildingtop.mp4" autoplay loop muted playsinline></video>
+      <figcaption>Flow around a building — top view</figcaption>
+    </figure>
+    <figure>
+      <video src="images/buildingside.mp4" autoplay loop muted playsinline></video>
+      <figcaption>Flow around a building — side view</figcaption>
+    </figure>
+  </div>
 
   <h2>M.Tech. Project</h2>
   <p>Understanding Physics of 2D Incompressible MHD Flow by Simulating
