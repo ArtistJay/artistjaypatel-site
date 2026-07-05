@@ -191,5 +191,24 @@
   </div>
 </footer>
 
+<script>
+// Keep simulations looping: browsers pause offscreen autoplay videos and
+// sometimes never resume them. This restarts any video whenever it becomes
+// visible, and pauses it when scrolled away (saves bandwidth too).
+document.addEventListener("DOMContentLoaded", function () {
+  var vids = document.querySelectorAll("video");
+  vids.forEach(function (v) { v.loop = true; v.muted = true; });
+  if ("IntersectionObserver" in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.play().catch(function () {}); }
+        else { e.target.pause(); }
+      });
+    }, { threshold: 0.15 });
+    vids.forEach(function (v) { obs.observe(v); });
+  }
+});
+</script>
+
 </body>
 </html>
