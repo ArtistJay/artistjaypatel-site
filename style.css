@@ -407,7 +407,7 @@ body.tinted::before {
   z-index: -1;
   background: url("images/banner-home.jpg") center / cover no-repeat;
   filter: blur(40px) saturate(1.05);
-  opacity: 0.12;
+  opacity: 0.15;
   pointer-events: none;
 }
 
@@ -460,3 +460,15 @@ body.tinted::before {
 }
 
 .grid-1 figure { margin: 0; }
+
+
+/* ---------- seamless media on the research page ---------- */
+
+body.seamless figure img,
+body.seamless figure video,
+body.seamless .grid-2 img,
+body.seamless .grid-1 video {
+  border: none;
+  border-radius: 0;
+  background: #ffffff;
+}
