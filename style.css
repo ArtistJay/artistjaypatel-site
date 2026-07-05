@@ -375,3 +375,20 @@ footer {
 
 .banner .banner-verse.left  { left: 24px; }
 .banner .banner-verse.right { right: 24px; }
+
+/* looping simulation videos styled like figures */
+figure video {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  display: block;
+}
+
+/* frosted plate behind the name on the busy home banner */
+.banner.light .banner-title span {
+  background: rgba(242, 245, 247, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 6px 30px;
+  border-radius: 10px;
+}
